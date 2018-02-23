@@ -1,16 +1,16 @@
-### App Title:
+# App Title:
 
 
-### App Description:
+# App Description:
 
 
-### Authors:
-# Tomek
-# Henryk
-# Lidka
+# Authors:
+### Tomek
+### Henryk
+### Lidka
 
 
-### App Specification:
+# App Specification:
 
 * Ruby version
 
