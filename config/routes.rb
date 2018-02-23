@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+Rails.application.routes.draw do 
   root 'users#index'
   get 'users', to: 'users#index', as: 'users_root'
   get 'signup', to: 'users#new', as: 'signup'
@@ -7,5 +7,5 @@ Rails.application.routes.draw do
 
   resources :users
   resources :sessions
-  
+  resources :groups
 end
