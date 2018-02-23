@@ -1,10 +1,16 @@
-# README
-### Tomek Marcińczyk
-Henryk
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# App Title:
 
-Things you may want to cover:
+
+# App Description:
+
+
+# Authors:
+### Tomek
+### Henryk
+### Lidka
+
+
+# App Specification:
 
 * Ruby version
 
