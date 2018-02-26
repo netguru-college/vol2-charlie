@@ -1,9 +1,4 @@
 initMap = function(lat, lng) {
-	if($('#map').length > 0) { return }
-
-
-	var cords = new google.maps.LatLng(lat, lng);
-
 	var map = new google.maps.Map(document.getElementById('map'), {
   	zoom: 15,
   	center: cords
@@ -12,9 +7,6 @@ initMap = function(lat, lng) {
   	position: cords,
   	map: map
 	});
-
-
-
 }
 
 $(document).ready(function() {
