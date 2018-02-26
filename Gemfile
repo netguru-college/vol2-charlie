@@ -34,9 +34,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt'
 gem 'pry-rails', :group => :development
 
-# Use Gmaps4rails for creating Google Maps
-gem 'gmaps4rails'
-
 gem 'jquery-rails'
 
 group :development, :test do
