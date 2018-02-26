@@ -1,20 +1,23 @@
+initMap = function(lat, lng) {
+	if($('#map').length > 0) { return }
+
+
+	var cords = new google.maps.LatLng(lat, lng);
+
+	var map = new google.maps.Map(document.getElementById('map'), {
+  	zoom: 15,
+  	center: cords
+	});
+	var marker = new google.maps.Marker({
+  	position: cords,
+  	map: map
+	});
 
 
 
+}
 
 $(document).ready(function() {
-
-	initMap = function(lat, lng) {
-		var uluru = {lat: lat, lng: lng};
-		var map = new google.maps.Map(document.getElementById('map'), {
-	  	zoom: 15,
-	  	center: uluru
-		});
-		var marker = new google.maps.Marker({
-	  	position: uluru,
-	  	map: map
-		});
-	}
 
 	if($('#map').length > 0) {
 		cords = $('#map').data()
