@@ -1,10 +1,7 @@
 Rails.application.routes.draw do 
-  root 'users#index'
-  get 'users', to: 'users#index', as: 'users_root'
-  get 'signup', to: 'users#new', as: 'signup'
+  devise_for :users
+  root to: 'users#index'
 
-  resources :users
-  resources :sessions
   resources :groups
   resources :events
 end
