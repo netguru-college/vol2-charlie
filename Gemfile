@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Use ruby static code analyzer 'RuboCop'
+gem 'rubocop', require: false
+
 gem 'haml'
 
 gem 'bootstrap', '~> 4.0.0'

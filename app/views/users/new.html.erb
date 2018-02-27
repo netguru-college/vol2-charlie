@@ -1,45 +1,61 @@
-<!-- <h1>Sign Up</h1> -->
-
-<%= form_for @user do |f| %>
-  <% if @user.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <% @user.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-<!--
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div class="actions"><%= f.submit "Sign Up" %></div>
-<% end %>
- -->
-
-
-
 <div class="form-control">
   <div class="row">
     <div class="sidenav" id="login-field">
       <div class="field form-control" >
-<!-- <%= form_tag sessions_path do %> -->
+
+      <%= form_for @user do |f| %>
+        <% if @user.errors.any? %>
+          <div class="error_messages">
+            <h2>Form is invalid</h2>
+            <ul>
+              <% @user.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-<!--            <span for=:email class="input-group-text" id="basic-addon1" >adress @:</span> -->
-            <%= f.label :email, class="input-group-text" %><br />
+            <div class="input-group-text" id="basic-addon1">
+
+<!--            <div class="field"> -->
+              <%= f.label :email %><br />
+            </div>
+              <%= f.text_field :email %>
+<!--            </div> -->
+          </div>
+        </div>
+
+
+        <div class="field">
+          <%= f.label :password %><br />
+          <%= f.password_field :password %>
+        </div>
+        <div class="field">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation %>
+        </div>
+        <div class="actions"><%= f.submit "Sign Up" %></div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+<div class="form-control">
+  <div class="row">
+    <div class="sidenav" id="login-field">
+      <div class="field form-control" >
+<%= form_tag sessions_path do %>
+
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span for=:email class="input-group-text" id="basic-addon1" >adress @:</span>
           </div>
           <input class="form-control" id="email" name="email" type="text" placeholder="enter Your email" aria-label=:email aria-describedby="basic-addon1"/>
         </div>
@@ -63,6 +79,8 @@
           <button type="submit" id="login-button" class="btn btn-outline-secondary" > Sing Up </button>
         </div>
         <% end %>
+
+
       </div>
     </div>
   </div>
