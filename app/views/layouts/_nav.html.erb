@@ -6,14 +6,14 @@
           Logged in as <%= current_user.email %>.
           <%= link_to "Log Out", logout_path %>
         <% else %>
-          <%= link_to "Sign Up", signup_path %> or
+          <%= link_to "Create", create_path %> or
           <%= link_to "Log In", login_path %>
         <% end %>
       </div>
 
       <form class="form-inline">
         <div id="nav-button">
-          <button type="button" class="btn btn-outline-secondary">Options</button>
+          <%= link_to "Add Event", newevent_path %>
         </div>
       </form>
 
