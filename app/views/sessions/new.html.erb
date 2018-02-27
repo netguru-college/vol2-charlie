@@ -1,13 +1,26 @@
-<h1>Log In</h1>
+<div class="form-control">
+  <div class="row">
+    <div class="sidenav" id="login-field">
+      <div class="field form-control" >
 
-<%= form_tag sessions_path do %>
-  <div class="field">
-    <%= label_tag :email %><br />
-    <%= text_field_tag :email, params[:email] %>
+        <%= form_tag sessions_path do %>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span for=:email class="input-group-text" id="basic-addon1" >adress @:</span>
+          </div>
+          <input class="form-control" id="email" name="email" type="text" placeholder="enter Your email" aria-label=:email aria-describedby="basic-addon1"/>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span for=:password class="input-group-text" id="basic-addon1">password:</span>
+          </div>
+          <input class="form-control" id="password" name="password" type="password" placeholder="enter the password"/>
+        </div>      
+        <div class="actions">
+          <button type="submit" id="login-button" class="btn btn-outline-secondary" > Login </button>
+        </div>
+        <% end %>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= label_tag :password %><br />
-    <%= password_field_tag :password %>
-  </div>
-  <div class="actions"><%= submit_tag "Log In" %></div>
-<% end %>
+</div>
