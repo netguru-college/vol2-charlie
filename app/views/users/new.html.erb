@@ -1,28 +1,152 @@
-<h1>Sign Up</h1>
+<div class="form-control">
+  <div class="row">
+    <div class="sidenav" id="login-field">
+      <div class="field form-control" >
 
-<%= form_for @user do |f| %>
-  <% if @user.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <% @user.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+      <%= form_for @user do |f| %>
+        <% if @user.errors.any? %>
+          <div class="error_messages">
+            <h2>Form is invalid</h2>
+            <ul>
+              <% @user.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
         <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="basic-addon1">
+
+<!--            <div class="field"> -->
+              <%= f.label :email %><br />
+            </div>
+              <%= f.text_field :email %>
+<!--            </div> -->
+          </div>
+        </div>
+
+
+        <div class="field">
+          <%= f.label :password %><br />
+          <%= f.password_field :password %>
+        </div>
+        <div class="field">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation %>
+        </div>
+        <div class="actions"><%= f.submit "Sign Up" %></div>
+      <% end %>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
+</div>
+
+
+<!--
+<div class="form-control">
+  <div class="row">
+    <div class="sidenav" id="login-field">
+      <div class="field form-control" >
+<%= form_tag sessions_path do %>
+
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span for=:email class="input-group-text" id="basic-addon1" >adress @:</span>
+          </div>
+          <input class="form-control" id="email" name="email" type="text" placeholder="enter Your email" aria-label=:email aria-describedby="basic-addon1"/>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span for=:password class="input-group-text" id="basic-addon1">password:</span>
+          </div>
+          <input class="form-control" id="password" name="password" type="password" placeholder="enter the password"/>
+        </div> 
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span for=:password class="input-group-text" id="basic-addon1">password_confirmation:</span>
+          </div>
+          <input class="form-control" id="password_confirmation" name="password_confirmation" type="password" placeholder="confirm the password"/>
+        </div>
+
+
+        <div class="actions">
+          <button type="submit" id="login-button" class="btn btn-outline-secondary" > Sing Up </button>
+        </div>
+        <% end %>
+
+
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
+</div>
+
+
+
+<!--
+<div class="form-control">
+  <div class="row">
+    <div class="sidenav" id="login-field">
+      <div class="field form-control" >
+        <%= form_tag sessions_path do %>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span for=:email class="input-group-text" id="basic-addon1" >adress @:</span>
+          </div>
+          <input class="form-control" id="email" name="email" type="text" placeholder="enter Your email" aria-label=:email aria-describedby="basic-addon1"/>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span for=:password class="input-group-text" id="basic-addon1">password:</span>
+          </div>
+          <input class="form-control" id="password" name="password" type="password" placeholder="enter the password"/>
+        </div>      
+        <div class="actions">
+          <button type="submit" id="login-button" class="btn btn-outline-secondary" > Login </button>
+        </div>
+        <% end %>
+      </div>
+    </div>
   </div>
-  <div class="actions"><%= f.submit "Sign Up" %></div>
-<% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="form-control">
+  <div class="row">
+    <div class="sidenav" id="login-field">
+
+
+      <%= form_tag sessions_path do %>
+      <div class="input-group mb-3">
+        <label for=:email>adress @:</label>
+        <input id="email" name="email" type="text" placeholder="enter Your email" aria-label=:email aria-describedby="basic-addon1"/>
+      </div>
+
+      <div class="input-group mb-3">
+        <label for=:password>password:</label>
+        <input id="password" name="password" type="password" placeholder="enter the password"/>
+      </div>      
+
+      <div class="actions">
+        <button type="submit" id="login-button" class="btn btn-outline-secondary" > Login </button>
+      </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
