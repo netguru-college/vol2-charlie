@@ -1,3 +1,44 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.field {
+    font-family: 'Courier New', Courier, monospace
+}
+
+.form-cotrol {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+// .center {
+//     text-align: center;
+//     position: static;
+//     display: block;
+//     margin-left: auto;
+//     margin-right: auto;
+
+// }
+
+.orange {
+    color: orange;
+}
+
+#login-field {
+    position: static;
+    // display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login-button {
+    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#basic-addon1 {
+    vertical-align: middle;
+    // text-align: ;
+}
