@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 20180227105056) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "owner_id"
     t.decimal "lat"
     t.decimal "lng"
-    t.integer "owner_id"
   end
 
   create_table "groups", force: :cascade do |t|
@@ -43,6 +43,8 @@ ActiveRecord::Schema.define(version: 20180227105056) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "town"
+    t.string "first_name"
+    t.string "last_name"
   end
 
 end
