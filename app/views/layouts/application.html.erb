@@ -3,8 +3,7 @@
   <head>
     <title>NomadApp</title>
     <%= csrf_meta_tags %>
-
-    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyCu9cIDuY72J2pJxd482dU9S6GXlNdVHzA&callback=initMap", async: true, defer:'defer' %>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyCu9cIDuY72J2pJxd482dU9S6GXlNdVHzA&callback" %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
@@ -17,11 +16,11 @@
       <%= link_to "Sign Up", signup_path %> or
       <%= link_to "Log In", login_path %>
     <% end %> -->
-    
+
     <div class="container">
       <%= render "layouts/nav"%>
-
       <%= yield %>
     </div>
+
   </body>
 </html>
