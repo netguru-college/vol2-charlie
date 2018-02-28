@@ -19,6 +19,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def my_events
+    render 'events/my_events'
+  end
+
   private
 
   def user_params
