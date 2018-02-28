@@ -5,6 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Add 'dotenv' gen to hide APP_ID and APP_SECRET
+# gem 'dotenv-rails', require: 'dotenv/rails-now'
+# gem 'gem-that-requires-env-variables'
+
+gem 'dotenv-rails', groups: [:development, :test]
 # Add 'omniauth-facebook' gem to authenticate via facebook
 gem 'omniauth-facebook'
 
