@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :groups
   resources :events
   
+  get 'user/my_events', to: 'users#my_events'
 end
