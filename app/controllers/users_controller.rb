@@ -5,6 +5,8 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+    @lat = Event.last.latitude
+    @lng = Event.last.longitude
   end
 
   def create
