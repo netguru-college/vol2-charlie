@@ -7,6 +7,7 @@ end
 
 # Add 'omniauth-facebook' gem to authenticate via facebook
 gem 'omniauth-facebook'
+
 # Use ruby static code analyzer 'RuboCop'
 gem 'rubocop', require: false
 
