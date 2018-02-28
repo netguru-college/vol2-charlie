@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180228100224) do
+ActiveRecord::Schema.define(version: 20180228104743) do
 
   create_table "events", force: :cascade do |t|
     t.string "name"
@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20180228100224) do
     t.decimal "longitude"
     t.integer "owner_id"
     t.string "address"
+    t.date "date"
+    t.time "time"
   end
 
   create_table "groups", force: :cascade do |t|
