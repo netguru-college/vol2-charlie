@@ -6,5 +6,4 @@ Rails.application.routes.draw do
   resources :groups
   resources :events
   
-  get 'newevent', to: 'events#new'
 end

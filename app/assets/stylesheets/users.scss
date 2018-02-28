@@ -30,10 +30,24 @@
 #nav-button2 {
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
+    right: 200px;
+}
+
+#nav-button3 {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
     right: 85px;
 }
 
 #basic-addon1 {
     vertical-align: middle;
     // text-align: ;
+}
+
+#user-name {
+    font-size: 18px;
+}
+
+#app-name {
+    font-size: 20px;
 }
