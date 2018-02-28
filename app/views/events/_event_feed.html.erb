@@ -1,5 +1,8 @@
 <ul id ="event-feed">
     <% Event.all.each do |event| %>
-      <li><%= event.name %></li>
+      <li>
+      	<span><%= event.name %>, <%= event.address %> </br> <%= event.date %>, <%= event.time.strftime("%I:%M%p") %></span><br/>
+      	<span>Sign Up!</span>
+      </li>
     <% end %>
 </ul>
