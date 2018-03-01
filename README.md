@@ -1,18 +1,19 @@
 # App Title:
-
+NomadApp [NetGuru Code College]
 
 # App Description:
 
 
 # Authors:
+### Lidka
 ### Tomek
 ### Henryk
-### Lidka
 
 
 # App Specification:
 
 * Ruby version
+2.4.1p111
 
 * System dependencies
 
