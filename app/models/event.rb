@@ -4,4 +4,7 @@ class Event < ApplicationRecord
 
   geocoded_by :address
   after_validation :geocode, if: ->(obj) { obj.address.present? && obj.address_changed? }
+
+  scope :where_participating, ->(user) { joins(:participants).where('participants.user_id': user) }
+
 end

@@ -6,3 +6,12 @@
       </li>
     <% end %>
 </ul>
+
+<!-- <h3></h3>
+<ul id ="event-feed">
+    <% Event.where_participating(current_user).each do |event| %>
+      <li>
+      	<span><%= event.name %>, <%= event.address %> </br> <%= event.date %>, <%= event.time.strftime("%I:%M%p") %></span><br/>
+      </li>
+    <% end %>
+</ul> -->
