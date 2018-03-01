@@ -28,12 +28,12 @@ Event.create!(
 	name: "NCC meetup",
 	description: "Say goodbye to your NCC friends.",
 	address: "Wojskowa 6, Poznań",
-	date: "03 11 2017",
+	date: "03 Nov 2017",
 	time: "01 Jan 2000 18:00:00 UTC +00:0")
 
 Event.create!(
 	name: "Lean Startup Summit",
 	description: "You’ll be part of a global conference on implementing sustainable innovation practices that boost growth in startups, enterprise companies, government agencies, and beyond.",
 	address: "Głogowska 14, Poznań",
-	date: "04 09 2017",
+	date: "04 Sep 2017",
 	time: "01 Jan 2000 10:00:00 UTC +00:0")
