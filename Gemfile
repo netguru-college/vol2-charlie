@@ -5,6 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Add 'dotenv' gen to hide APP_ID and APP_SECRET
+# Add 'omniauth-facebook' gem to authenticate via facebook
+gem 'omniauth-facebook'
+
 # Use ruby static code analyzer 'RuboCop'
 gem 'rubocop', require: false
 
