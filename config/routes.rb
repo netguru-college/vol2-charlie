@@ -1,6 +1,5 @@
 Rails.application.routes.draw do 
-  devise_for :users
-
+  
   root to: 'users#index'
 
   resources :groups
@@ -9,4 +8,7 @@ Rails.application.routes.draw do
   end
   
   get 'user/my_events', to: 'users#my_events'
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+
+  get 'newevent', to: 'events#new'
 end
