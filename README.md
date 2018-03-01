@@ -1,6 +1,8 @@
 # App Title:
 NomadApp "Meet new people around the world" [NetGuru Code College]
 
+https://ncc-nomad-app.herokuapp.com/
+
 # App Description:
 Simple app, based on Ruby on Rails.
 Login with facebook & add events!
