@@ -2,7 +2,7 @@
     <% Event.all.each do |event| %>
       <li>
       	<span><%= event.name %>, <%= event.address %> </br> <%= event.date %>, <%= event.time.strftime("%I:%M%p") %></span><br/>
-      	<span>Sign Up!</span>
+      	<span><%= link_to 'Sign Up!', event_join_path(event) %></span>
       </li>
     <% end %>
 </ul>

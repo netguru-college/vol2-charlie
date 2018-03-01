@@ -10,8 +10,12 @@
   <%= @event.description %>
 </p>
 
+<% if @event.participants.map(&:id).include?(current_user.id) %>
+  <p style="font-size:18px"> You are going to this event. </p>
+<% end %>
+
 <p>
-	<%= render "events/map" %>
+  <%= render "events/map" %>
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |

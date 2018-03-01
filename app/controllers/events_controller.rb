@@ -37,6 +37,16 @@ class EventsController < ApplicationController
     end
   end
 
+  def join_event
+    @event = Event.find(params[:event_id])
+
+    participant = @event.participants.build(user_id: current_user.id)
+
+    respond_to do |format|
+      format.html { redirect_to @event, notice: 'You joined this event.' } if participant.save
+    end
+  end
+
   # PATCH/PUT /events/1
   # PATCH/PUT /events/1.json
   def update
