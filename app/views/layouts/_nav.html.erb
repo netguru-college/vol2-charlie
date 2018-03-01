@@ -5,7 +5,6 @@
         <% if current_user %>
           <span id="user-name">
             <%= current_user.first_name %>
-            <%= current_user.last_name %>
           </span>
           <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
         <% else %>
