@@ -85,6 +85,7 @@ GEM
     execjs (2.7.0)
     faraday (0.12.2)
       multipart-post (>= 1.2, < 3)
+    ffaker (2.8.1)
     ffi (1.9.22)
     geocoder (1.4.5)
     globalid (0.4.1)
@@ -252,6 +253,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   dotenv-rails
+  ffaker
   geocoder
   haml
   jbuilder (~> 2.5)
